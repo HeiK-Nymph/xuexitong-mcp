@@ -1,0 +1,53 @@
+# ── 凭据：绝不进仓库 ─────────────────────────────────────────────
+# 真实凭据放在 <作业根>/.xuexitong_mcp/.env（默认 D:/学习通作业/.xuexitong_mcp/.env），
+# 项目里只留 .env.example。优先级：进程环境变量 > 项目根 .env > <作业根>/.xuexitong_mcp/.env。
+.env
+.env.*
+!.env.example
+
+# ── 运行时数据：本项目的设计是"项目目录只有代码/文档/测试" ──────────────
+# cookie、菜单缓存、材料缓存、提交 payload、作答页地址表都写在 <作业根>/.xuexitong_mcp/。
+# 这里兜底：万一有人把 XUEXITONG_ROOT / XUEXITONG_STATE_DIR 指到项目里。
+state/
+.xuexitong_mcp/
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# ── 测试 / 工具缓存 ───────────────────────────────────────────
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ── 依赖目录：分享/提交都不带 ──────────────────────────────────
+node_modules/
+scripts/js_ref/package-lock.json
+
+# ── 编辑器 / 系统 ─────────────────────────────────────────────
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── 本地产物 / 备份 / 分享包 ───────────────────────────────────
+*.bak
+*.bak-*
+*.log
+*.tmp
+*.zip
+tmp/
+scratch/

@@ -1,0 +1,19 @@
+# 文本文件统一在仓库里按 LF 存储（检出时按平台习惯，不强制）：
+# 这样 Windows 上 core.autocrlf=true 与本项目的混合换行不会互相打架。
+# （本项目历史上吃过换行不一致的亏：改一行文档 diff 出整个文件。）
+* text=auto
+
+# 二进制：一律不做换行转换 —— 本项目会经手 Word、压缩包、截图
+*.docx binary
+*.doc binary
+*.xlsx binary
+*.pdf binary
+*.zip binary
+*.rar binary
+*.7z binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.ico binary

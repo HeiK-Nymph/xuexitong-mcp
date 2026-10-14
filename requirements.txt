@@ -1,0 +1,11 @@
+# xuexitong_mcp 依赖
+# 服务本体必需（少了任何一个，导入即失败）
+httpx>=0.27.0            # 所有网络请求
+cryptography>=42.0.0     # 登录密码 AES-128-CBC 加密
+beautifulsoup4>=4.12.0   # 解析课程/作业/附件页面
+python-docx>=1.1.0       # 读写 .docx（模板回填、完成版文档）
+
+# 可选：把 .doc 转成 .docx（Windows 且装了 Office 时才用；不装就退回 LibreOffice 或手动另存）
+# pywin32>=306
+
+# 可选：解压 .rar / .7z 需要本机有 WinRAR / 7-Zip（不是 pip 包）

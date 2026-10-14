@@ -1,0 +1,746 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<script>
+    _HOST_ = "//mooc1-2.chaoxing.com";
+    _CP_ = "/mooc-ans";
+    _HOST_CP1_ = "//mooc1-2.chaoxing.com/mooc-ans";
+    // _HOST_CP2_ = _HOST_ + _CP_;
+    _HOST_CP2_ = _CP_;
+</script><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>医学影像示例-作业</title><link rel="stylesheet" type="text/css" href="//mooc1-2.chaoxing.com/mooc-ans/space/new/moocIndex/css/teacherHeader.css"/>
+<link href="//mooc1-2.chaoxing.com/mooc-ans/space/new/moocIndex/css/moocLeft.css" type="text/css" rel="stylesheet"/><link href="//mooc1-2.chaoxing.com/mooc-ans/space/new/moocIndex/css/ZuoYe.css" type="text/css" rel="stylesheet"/>
+	<link href="//mooc1-2.chaoxing.com/mooc-ans/css/courselist/teacherclass.css?v=2021-1224-1429" rel="stylesheet" type="text/css" />
+<link href="//mooc1-2.chaoxing.com/mooc-ans/css/courselist/teacherclassCH.css" rel="stylesheet" type="text/css" />	<script src="//mooc1-2.chaoxing.com/mooc-ans/space/new/js/jquery.min.js"></script>
+<script src="//mooc1-2.chaoxing.com/mooc-ans/space/new/js/right.js?v=2019-1025-1800"></script>
+<script src="//mooc1-2.chaoxing.com/mooc-ans/js/fanya.js"></script>
+<script type="text/javascript" src="//mooc1-2.chaoxing.com/mooc-ans/space/new/js/pageUtil.js"></script>
+<script src="//mooc-res2.chaoxing.com/mooc-ans/space/new/js/wayer_v1.2.mini.js" ></script>
+<script>
+	$(function() {
+		$("input[name='sw']").keypress(function(event){
+    		if(event.keyCode==13){
+    			searchWork();
+    		}
+    	});
+		
+		$("#CyList li").hover(function() {
+			$(this).addClass("Hover");
+		},function() {
+			$(this).removeClass("Hover");
+		});
+		$("#CyList .btnGreen").click(function() {
+			var par = $(this).parent().parent().parent(),
+				reply = par.next(),
+				height = reply.find(".CyAnswer").height() + 67;	// 67 = 25 + 2 + 20*2
+			
+			height = parseInt(reply.height()) == 0 ? height : "0px";
+			reply.animate({"height" : height},1000,function() {
+				reply.height("auto");
+				par.css("display", "none");
+			});
+			$("html, body").animate({"scrollTop" : par.offset().top},1000);
+		});
+		
+		$(".wrap-answer .Cysq").click(function() {
+			var wrap = $(this).parent().parent().parent().parent();
+			wrap.animate({"height":"0px"},1000,function() {
+				wrap.prev().css("display","block");
+			});
+		});
+	});
+</script>
+<style>
+.ulDiv ul li{height:152px;position:relative;}
+.ulDiv ul li .titOper p{padding-top:12px;}
+.ulDiv ul li .titOper{position:absolute;bottom:0;left:0;width:293px;}
+.ulDiv ul li .titTxt{height:195px;}
+.Btn_blue_1{height:25px;}
+.Btn_blue_1 span{line-height:24px;}
+.Btn_red_1{height:25px;font-size:14px;}
+.AlertCon02{padding:0;}
+.editDate{height:49px;line-height:49px;background:#f0f0f0;border-bottom:1px solid #e0e0e0;font-size:16px;font-weight:bold;color:#333;padding:0 15px;}
+</style>
+</head>
+<body class="bg">
+				<div class="mb10">
+            			                                    <script type="text/javascript" src="/head/passport/allHead.shtml?uri="  charset="utf-8"></script>
+                                        <input type="hidden" id="showTeachingSpace" value=""/>
+            <input type="hidden" id="teachingSpaceUrl" value=""/>
+            <input type="hidden" id="teachingSpaceText" value="教学空间"/>
+            <script type="text/javascript"
+                    src="//mooc1-2.chaoxing.com/mooc-ans/js/course/course-portal-header.js?v=2026-0508-1130"></script>
+            <link rel="stylesheet" href="//mooc1-2.chaoxing.com/mooc-ans/css/course/course-portal-header.css?v=2026-0429-2006">
+        </div>
+		
+<style type="text/css">
+	 .workTip{display:none;width:8px;height:8px;background:red;border-radius:8px;position:absolute;top:-2px;right:0px}
+	 .testTip{display:none;width:8px;height:8px;background:red;border-radius:8px;position:absolute;top:-2px;right:0px}
+	 .cdataTip{display:none;width:8px;height:8px;background:red;border-radius:8px;position:absolute;top:-2px;right:0px}
+	 .workTipPd{display:none;width:8px;height:8px;background:red;border-radius:8px;position:absolute;top:10px;right:0px}
+     .experience{display:inline-block;padding:0 10px!important;height:28px;border:1px solid #e1e7f0;background: #F6F9FE;text-align:center;line-height:28px;font-size:14px;color:#5C7499;border-radius: 30px;margin-left: 20px;}
+     .experience:hover{opacity:0.7}
+	 .US{ display: inline-block;width: 170px;overflow: hidden;height: 40px;white-space: nowrap;text-overflow: ellipsis;line-height: 40px;}
+</style>
+
+<div  class="c-header" >
+		<div class="headerwrap">
+					<div  class="c-menu">
+				<div class="navhide">
+					<span></span>功能导航				</div>
+									<div class="navshow">
+						<ul>
+														    							        <li><a mode="yiji"  href='/mooc-ans/mycourse/studentcourse?courseId=266546001&clazzid=153220001&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02&fromMiddle=1' title="首页">首页</a><label id="mytaskcount"></label></li>
+																    			    				 																		
+																																										                                                    <li><a mode="fuseMode" target="_blank" href="//mobilelearn.chaoxing.com/widget/pcpick/stu/index?courseId=266546001&jclassId=153220001" title="任务">任务</a></li>
+																																												    				    																																																	<li><a 																				href="/mooc-ans/moocAnalysis/statistics-std?courseId=266546001&classId=153220001&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02"
+																				>统计</a></li>
+																																																						    <li><a onclick="rmWorkDot('153220001','cdata',this);"  href="/mooc-ans/coursedata?classId=153220001&courseId=266546001&type=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02" data = "/coursedata?classId=153220001&courseId=266546001&type=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02" title="资料">资料</a><i class="cdataTip"></i></li>
+							    																													   		<li><a mode="fuseMode"   href="/mooc-ans/schoolCourseInfo/getNotifyList?courseId=266546001&classId=153220001&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02" title="通知">通知</a></li>
+							    															
+																																													<li><a  onclick="rmWorkDot('153220001','work',this);"    class="current"  href="javascript:;" data="/work/getAllWork?classId=153220001&courseId=266546001&isdisplaytable=2&mooc=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02" title="作业">作业  </a><i class="workTip"></i></li>
+																																											    								    	<li><a mode="yiji" onclick="rmWorkDot('153220001','exam',this);"  href="javascript:;" data="/exam-ans/exam/test?classId=153220001&courseId=266546001&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02" title="考试">考试 </a><i class="testTip"> </i></li>
+								    																							
+														    							    									        								        	<li><a mode="fuseMode"  href="/mooc-ans/bbscircle/grouptopic?courseId=266546001&clazzid=153220001&showChooseClazzId=153220001&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02" title="讨论">讨论</a></li>
+								        							        							    															
+								
+														
+														
+														
+														
+								
+																						<li><a   href="/mooc-ans/schoolCourseInfo/teachingclassmanage/livecourse?courseId=266546001&ut=s&classId=153220001&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02" title="直播课/见面课">直播课/见面课</a></li>
+							
+                            
+                            								<li>
+                                	<a href="/mooc-ans/mycourse/studentcourse?courseId=266546001&clazzid=153220001&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02&v=2&fromMiddle=1"
+                                   class="experience" style="border-radius: 30px;font-size:14px;padding:0">体验新版</a>
+								</li>
+                            						</ul>
+					</div>
+							</div>
+							<h1>
+				<span title="医学影像示例" >
+					                        <a  href="javascript:;"  onclick="$('#tpsubmit').submit();">
+							医学影像示例
+                        </a>
+									</span>
+				<span class="articleschool" style="text-decoration: none;">
+					<span title="医学影像示例" >
+						<font color="#333">
+							<span title=""></span>
+						</font>&nbsp;
+													<a href="/mooc-ans/coursestar?courseId=266546001&clazzId=153220001&edit=false" >课程评价</a>
+											</span>
+				</span>
+			</h1>
+							<form id="tpsubmit"   action="/mooc-ans/course/portal/h6iu7cCpYIwJannmFP27Ag==" target="_blank"   method="get">
+																</form>
+		
+	</div>
+</div>
+<input type="hidden" id="cid" value="153220001">
+
+<script>
+    if ($(".navshow ul li").length > 11) {
+        $(".navshow ul li").css("margin-left", "4px");
+        $(".navshow ul li a").css("padding", "2px 5px");
+    }
+    if ($(".navshow ul li").length > 10) {
+		$(".navshow ul li").css("margin-left", "5px");
+		$(".navshow ul li a").css("padding", "2px 6px");
+    }
+    var showExpandread = '';
+    if (showExpandread == 'true') {
+		$(".navshow ul li").css("margin-left", "1px");
+		$(".navshow ul li a").css("padding", "0px 5px");
+		$(".experience").css("margin-left", "5px");
+	}
+
+    $('.navhide span').click(function () {
+
+		$(this).parent().hide(0,function(){
+		$('.navshow').show();
+		$('.navshow').animate({'margin-right':0 + 'px'},400);
+		});
+		});
+		$('.navshow span').click(function(){
+		$('.navhide').show();
+		$(this).parent().animate({'margin-right':-980 + 'px'},400,function(){
+		});
+		}); 
+	var hasWorkDot=false;
+	var hasExamDot=false;
+    var hasCourseDataDot=false;
+   //待批作业、待批考试红点数据加载
+      var redDot = function(){
+        jQuery.ajax({ 
+        	type: "get", 
+        	url : _HOST_CP2_ + "/api/workTestPendingNew", 
+        	data: {
+            		classIds:$("#cid").val()
+        		}, 
+        	success: function(data){
+        	  var json= jQuery.parseJSON(data)[0];
+    			if('s'=='s') {
+    				if(json.hasWorkMsg){
+    				  $(".workTip").css("display","inline-block");
+					  hasWorkDot=true;
+    				}
+    				if(json.hasExamMsg){
+    					$(".testTip").css("display","inline-block");
+						hasExamDot=true;
+    				}
+                    if(json.hasCourseDataMsg){
+                        $(".cdataTip").css("display","inline-block");
+                        hasCourseDataDot=true;
+                    }
+    			}
+    		}
+        	
+        }); 
+      }
+  $(function(){
+  	var yiji = "false";
+  	var fuseMode = "false";
+  	var readyMode = "false";
+  	
+    if ("true" == yiji) {
+    	$(".navshow").find("li a").each(function(index, ele){
+	    	var type = $(this).attr("mode");
+	    	if (type != "yiji") {
+				$(this).attr("target", "");
+	    		$(this).attr("href", "javascript:;");
+	    		$(this).removeAttr("onclick");
+	    		$(this).click(function(){
+	    			alert("访问高峰时段，此功能暂时关闭");
+				});
+	    	}
+	    });
+    } else if ("true" == fuseMode) {
+    	$(".navshow").find("li a").each(function(index, ele){
+	    	var type = $(this).attr("mode");
+	    	if ("fuseMode" == type) {
+				$(this).attr("target", "");
+	    		$(this).attr("href", "javascript:;");
+	    		$(this).removeAttr("onclick");
+	    		$(this).click(function(){
+	    			alert("访问高峰时段，此功能暂时关闭");
+				});
+	    	}
+	    });
+    }
+  
+    if ('s' == 's' && "true" != readyMode) {
+		setTimeout('redDot()',1000);
+	}
+	
+	if($(".navshow ul li").length==1){
+		$(".navshow").css("display","none");
+	}
+  	
+  });
+  var rmWorkDot = function(classid,type,me){
+      if ('work' == type) {
+	 	location.href= _HOST_CP2_ + $(me).attr("data");
+		return;
+	 }
+	 if('exam'==type && !hasExamDot){
+	 	location.href=$(me).attr("data");
+		return;
+	 }
+     if('cdata'==type && !hasCourseDataDot){
+        location.href= _HOST_CP2_ + $(me).attr("data");
+        return;
+     }
+     
+     jQuery.ajax({ 
+        	type: "get",
+            dataType: "json", 
+        	url : _HOST_CP2_ + "/api/removeRedDot", 
+        	data: {
+            		classId:classid,
+					type:type
+        		}, 
+        	success: function(data){
+                if(data && data.status){
+            		//success
+                    location.href=$(me).attr("data");
+                }
+    		}
+        	
+        });
+        
+    //location.href=$(me).attr("data");
+  }
+  
+</script>
+
+	<div class="wrap1000 clearfix con">
+		<div class="width1100_smile">
+			<div class="RightCon" id="RightCon">
+				<div class="radiusBG">
+					<div class="CeYan">
+						
+						<!--切换列表-->
+												<div class="CyTop">
+							<ul class="ul01">
+							    <li class="cur">
+							    	<a href="javascript:void(0)" onclick="location.href='/mooc-ans/work/getAllWork?classId=153220001&courseId=266546001&isdisplaytable=2&mooc=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02'" title="">我的作业</a>
+							    	<b></b>&nbsp;&nbsp;&nbsp;|<b></b>
+							    </li>
+								<li>
+									<a href="javascript:void(0)" onclick="location.href='/mooc-ans/work/evaluation?classId=153220001&courseId=266546001&isdisplaytable=2&mooc=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02'" title="待批作业">待批作业</a>
+																	</li>
+							</ul>
+            			</div>
+            			
+						<!--列表内容开始-->
+						<div class="ulDiv">
+							<ul class="clearfix" style="*width:1020px;">
+																																															<li  style="padding:30px 0">
+																					<div class="huping">
+												<p class="huping_icon"></p>
+											</div>
+																				
+																				<div class="titTxt" data="0">
+											<p class="clearfix" style="padding-top:11px;">
+																																																					<a href="javascript:void(0);" class="inspectTask" data="55200010" data2="55200006" data3="1" title="影像分割示例（2）">
+																												
+																													影像分割示例（2）     
+																												</a>
+																																			
+																							</p>
+									
+											<span title="" class="pt5"><span class="fl">开始时间：</span>2026-10-10 15:30</span>
+											<span title="" class="pt5"><span class="fl">截止时间：</span>2026-10-26 10:00</span>
+											
+											
+											<span title="" class="pt5">
+												<span class="fl">作业状态：</span>
+																								
+												<strong>
+																																										待批阅																																																																																					</strong>
+											</span>
+										</div>
+																				
+										<div class="titOper">
+																						<span style="color:red;font-weight:bold;font-size:18px;line-height:45px;" class="fl">
+																							</span>
+											
+																						<p style="float:none;" class="clearfix">
+																																							                    									<a class="Btn_red_1 fr inspectTask" href="javascript:void(0);" data="55200010" data2="55200006" data3="1">
+                    										<span>重新编辑</span>
+                    									</a>
+                    																																													</p>
+																					</div>
+										<div class="shadow"></div>
+										</li>
+																																							<li  class="lookLi"  style="padding:30px 0">
+																					<div class="huping">
+												<p class="huping_icon"></p>
+											</div>
+																				
+																				<div class="titTxt" data="0">
+											<p class="clearfix" style="padding-top:11px;">
+																									                                                    <a href="/mooc-ans/work/selectWorkQuestionYiPiYue?courseId=266546001&classId=153220001&workId=55200009&workAnswerId=55200005&isdisplaytable=2&mooc=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001" onclick="javascript:void(0);" title="影像分割示例（1）" style="float: left">
+																										
+																											影像分割示例（1）     
+																										</a>
+																																			
+																							</p>
+									
+											<span title="" class="pt5"><span class="fl">开始时间：</span>2026-09-30 15:29</span>
+											<span title="" class="pt5"><span class="fl">截止时间：</span>2026-10-12 10:10</span>
+											
+											
+											<span title="" class="pt5">
+												<span class="fl">作业状态：</span>
+																								
+												<strong>
+																																										待批阅																																							</strong>
+											</span>
+										</div>
+																				
+										<div class="titOper">
+																						<span style="color:red;font-weight:bold;font-size:18px;line-height:45px;" class="fl">
+																							</span>
+											
+																						<p style="float:none;" class="clearfix">
+																																						<a class="Btn_blue_1 fr" href="/mooc-ans/work/selectWorkQuestionYiPiYue?courseId=266546001&classId=153220001&workId=55200009&workAnswerId=55200005&isdisplaytable=2&mooc=1&ut=s&evaluation=1&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001">
+														<span>查看</span>
+													</a>
+																																				</p>
+																					</div>
+										<div class="shadow"></div>
+										</li>
+																																							<li  class="lookLi"  style="padding:30px 0">
+																					<div class="huping">
+												<p class="huping_icon"></p>
+											</div>
+																				
+																				<div class="titTxt" data="0">
+											<p class="clearfix" style="padding-top:11px;">
+																									                                                    <a href="/mooc-ans/work/selectWorkQuestionYiPiYue?courseId=266546001&classId=153220001&workId=55200008&workAnswerId=55200004&isdisplaytable=2&mooc=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001" onclick="javascript:void(0);" title="影像增强示例（2）" style="float: left">
+																										
+																											影像增强示例（2）     
+																										</a>
+																																			
+																							</p>
+									
+											<span title="" class="pt5"><span class="fl">开始时间：</span>2026-09-23 15:21</span>
+											<span title="" class="pt5"><span class="fl">截止时间：</span>2026-09-28 10:00</span>
+											
+											
+											<span title="" class="pt5">
+												<span class="fl">作业状态：</span>
+																								
+												<strong>
+																																										待批阅																																							</strong>
+											</span>
+										</div>
+																				
+										<div class="titOper">
+																						<span style="color:red;font-weight:bold;font-size:18px;line-height:45px;" class="fl">
+																							</span>
+											
+																						<p style="float:none;" class="clearfix">
+																																						<a class="Btn_blue_1 fr" href="/mooc-ans/work/selectWorkQuestionYiPiYue?courseId=266546001&classId=153220001&workId=55200008&workAnswerId=55200004&isdisplaytable=2&mooc=1&ut=s&evaluation=1&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001">
+														<span>查看</span>
+													</a>
+																																				</p>
+																					</div>
+										<div class="shadow"></div>
+										</li>
+																																							<li  class="lookLi"  style="padding:30px 0">
+																					<div class="huping">
+												<p class="huping_icon"></p>
+											</div>
+																				
+																				<div class="titTxt" data="0">
+											<p class="clearfix" style="padding-top:11px;">
+																									<a href="/mooc-ans/work/selectWorkQuestionYiPiYue?courseId=266546001&classId=153220001&workId=55200007&workAnswerId=55200003&isdisplaytable=2&mooc=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001" title="影像增强示例（1）" >
+																													影像增强示例（1）     
+																											</a>
+																						
+																							</p>
+									
+											<span title="" class="pt5"><span class="fl">开始时间：</span>2026-09-16 15:33</span>
+											<span title="" class="pt5"><span class="fl">截止时间：</span>2026-09-21 10:00</span>
+											
+											
+											<span title="" class="pt5">
+												<span class="fl">作业状态：</span>
+																								
+												<strong>
+																											已完成 		                                                																									</strong>
+											</span>
+										</div>
+																				
+										<div class="titOper">
+																						<span style="color:red;font-weight:bold;font-size:18px;line-height:45px;" class="fl">
+																																							100分																																				</span>
+											
+																						<p style="float:none;" class="clearfix">
+																									<a class="Btn_blue_1 fr" href="/mooc-ans/work/selectWorkQuestionYiPiYue?courseId=266546001&classId=153220001&workId=55200007&workAnswerId=55200003&isdisplaytable=2&mooc=1&ut=s&evaluation=1&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001">
+														<span>查看</span>
+													</a>
+																							</p>
+																					</div>
+										<div class="shadow"></div>
+										</li>
+																																							<li  class="lookLi"  style="padding:30px 0">
+																					<div class="huping">
+												<p class="huping_icon"></p>
+											</div>
+																				
+																				<div class="titTxt" data="0">
+											<p class="clearfix" style="padding-top:11px;">
+																									                                                    <a href="/mooc-ans/work/selectWorkQuestionYiPiYue?courseId=266546001&classId=153220001&workId=55200001&workAnswerId=55200002&isdisplaytable=2&mooc=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001" onclick="javascript:void(0);" title="医学影像示例基础" style="float: left">
+																										
+																											医学影像示例基础     
+																										</a>
+																																			
+																							</p>
+									
+											<span title="" class="pt5"><span class="fl">开始时间：</span>2026-09-09 14:09</span>
+											<span title="" class="pt5"><span class="fl">截止时间：</span>2026-09-14 10:00</span>
+											
+											
+											<span title="" class="pt5">
+												<span class="fl">作业状态：</span>
+																								
+												<strong>
+																																										待批阅																																							</strong>
+											</span>
+										</div>
+																				
+										<div class="titOper">
+																						<span style="color:red;font-weight:bold;font-size:18px;line-height:45px;" class="fl">
+																							</span>
+											
+																						<p style="float:none;" class="clearfix">
+																																						<a class="Btn_blue_1 fr" href="/mooc-ans/work/selectWorkQuestionYiPiYue?courseId=266546001&classId=153220001&workId=55200001&workAnswerId=55200002&isdisplaytable=2&mooc=1&ut=s&evaluation=1&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001">
+														<span>查看</span>
+													</a>
+																																				</p>
+																					</div>
+										<div class="shadow"></div>
+										</li>
+																								</ul>
+						</div>
+						<div class="page"></div>
+						<!--列表内容结束-->
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- 未完成任务点提示框 -->
+		<div style="width:340px; height:144px;display:none;" class="AlertCon02" id="tipUnfinishWin">
+			<h3 class="clearfix"><a class="closed02 fr" href="javascript:void(0)" onclick="WAY.box.hide();$('#tipUnfinishWin').css('display','none');" ></a></h3>
+			<div class="con03">
+		    	<p id="tipUnfinish"></p>
+		        <div class="marTop30">
+		        	<a class="bluebtn" href="javascript:void(0)" onclick="WAY.box.hide();$('#tipUnfinishWin').css('display','none');">确定</a>
+		        </div>
+		    </div>
+		</div>
+		<!-- 未开始作业提示框 -->
+		<div style="width:340px; height:170px;display:none;" class="AlertCon02" id="tipNoStartWin">
+			<h3 class="clearfix"><a class="closed02 fr" href="javascript:void(0)" onclick="WAY.box.hide();$('#tipNoStartWin').css('display','none');" ></a></h3>
+			<div class="con03">
+				<p id="tipNoStart"></p>
+				<div class="marTop30">
+					<a class="bluebtn" href="javascript:void(0)" onclick="WAY.box.hide();$('#tipNoStartWin').css('display','none');">确定</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<div style="width:578px;height:190px;display:none;padding:0" class="AlertCon02" id="reWork">
+		<h3 class="clearfix editDate">作业重做<a class="closed02 fr" href="javascript:void(0)" onclick="WAY.box.hide();$('#reWork').css('display','none');" ></a></h3>
+		<div class="con03">
+	    	<p id="redoTips">请确认是否重做？之前的答题内容保留</p>
+	        <div class="marTop30">
+	        	<a class="bluebtn" href="javascript:void(0)" onclick="WAY.box.hide();$('#reWork').css('display','none');" style="width:76px;height:36px;line-height:36px;text-align:center;color:#666;background:#e6e6e6;">取消</a>
+	            <a class="btnGray_1 marleft10" href="javascript:void(0)" id="reWorkBtn" style="width:76px;height:36px;line-height:36px;text-align:center;background:#7b9e31;color:#FFF;">重做</a>
+	        </div>
+	    </div>
+	</div>
+
+<script>
+	var lock = 1;
+	
+	$(function() {
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: _HOST_CP2_ + "/api/addreddot",
+            data: {
+                "classId": "153220001",
+                "courseId": "266546001",
+                "ut": "s",
+                "type": "work",
+                "cpi":414822001
+            },
+            success: function (data) {
+                if (data.status) {
+                    var personTaskMsgs = data.personTaskMsg;
+                    for (var i = 0; i < personTaskMsgs.length; i++) {
+                        var workLibraryId = personTaskMsgs[i].taskRefId;
+                        $("#reddot" + workLibraryId).css("display", "inline-block");
+                    }
+                }
+            }
+        });
+        $(".removeReddot").click(function () {
+            var workRelationId = $(this).attr("data");
+            var cpi = 414822001;
+            if ($("#reddot" + workRelationId).css("display") == "block") {
+                $.ajax({
+                    type: "get",
+                    dataType: "json",
+                    url: _HOST_CP2_ + "/api/removeworkreddot",
+                    async: false,
+                    data: {
+                        "classId": "153220001",
+                        "courseId": "266546001",
+                        "ut": "s",
+                        "taskRefId": workRelationId,
+                        "type": "work",
+                        "cpi": cpi,
+                    }, error: function () {
+                        alert("信息处理出错,请返回稍候重试...");
+                    }
+                });
+            }
+        });
+		$(".noStartWork").click(function() {
+			var startTime = $("#startTime").val();
+			$("#tipNoStart").text("作业未开始，开始时间：" + startTime);
+			WAY.box.show({
+				'divid' : 'tipNoStartWin'
+			});
+		})
+
+		$(".inspectTask").click(function() {
+			var classId = 153220001;
+			var courseId = 266546001;
+			var workRelationId = $(this).attr("data");
+			var workRelationAnswerId = $(this).attr("data2");
+			var redit = $(this).attr("data3");
+			var redoTimes = $(this).attr("data4") || 0;
+			var redoHighest = $(this).parents(".titTxt").attr("data") || 0;
+			var cpi = 414822001;
+			var url = "";
+			if (redit == 0 || redit == 4) {
+				url = _HOST_CP2_+ "/work/doHomeWorkNew?courseId=" + courseId + "&classId=" + classId + "&workId=" + workRelationId + "&workAnswerId="
+					+ workRelationAnswerId + "&isdisplaytable=2&mooc=1&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02&standardEnc=";
+			} else if (redit == 1) {
+				url = _HOST_CP2_+ "/work/doHomeWorkNew?courseId=" + courseId + "&classId=" + classId + "&workId=" + workRelationId + "&workAnswerId="
+					+ workRelationAnswerId + "&reEdit=1&isdisplaytable=2&mooc=1&enc=1111aaaa2222bbbb3333cccc4444dd03&workSystem=0&cpi=414822001&openc=1111aaaa2222bbbb3333cccc4444dd02&standardEnc=";
+			}
+            if ($("#reddot" + workRelationId).css("display") == "block") {
+                $.ajax({
+                    type: "get",
+                    dataType: "json",
+                    url: _HOST_CP2_ + "/api/removeworkreddot",
+                    data: {
+                        "classId": "153220001",
+                        "courseId": "266546001",
+                        "ut": "s",
+                        "taskRefId": workRelationId,
+                        "type": "work",
+                        "cpi": cpi
+                    }, success: function (data) {
+                    }
+                });
+            }
+            $.ajax({
+				type : "get",
+				dataType : "json",
+				url : _HOST_CP2_ + "/work/isExpire",
+				data : {
+					"classId" : classId,
+					"workRelationId" : workRelationId,
+					"cpi": cpi,
+					"courseId" : courseId
+				},
+				success : function(json) {
+					if (json.status == "1") {
+						$("#tipUnfinish").text("章节任务点未完成" + json.finishStandard + "%，不能做作业。");
+						WAY.box.show({
+							'divid' : 'tipUnfinishWin'
+						});
+					} else if (json.status == "0") {
+						var standardEnc = json.standardEnc;
+						var sUrl = url + standardEnc;
+						if (redit == 4) {
+
+							var cont = "本次成绩";
+							if (redoHighest == 1) {
+								cont = "最高成绩";
+							}
+							var tips = "你还可以重做" + redoTimes + "次，确认重做后，前一次作答记录会被覆盖，作业成绩以" + cont + "为最终成绩，是否继续？";
+							$("#redoTips").text(tips);
+							
+							WAY.box.show({'divid' : 'reWork'});
+							$("#reWorkBtn").unbind();
+							$("#reWorkBtn").click(function() {
+								if (lock == 0) {
+									return;
+								}
+								lock = 0;
+								redo(courseId, classId, workRelationId, workRelationAnswerId, sUrl);
+							});
+						} else {
+							location.href = sUrl;
+						}
+					}
+				}
+			});
+		});
+	});
+	
+	function redo(courseId, classId, workId, workAnswerId, url) {
+		$.ajax({
+			type : "get",
+			url : _HOST_CP2_ + "/work/phone/redo",
+			dataType : "json",
+			data : {
+				"workId" : workId,
+				"classId" : classId,
+				"courseId" : courseId,
+				"workAnswerId" : workAnswerId
+			},
+			success : function(data) {
+				if(data.status == 1) {
+					location.href = url;
+				} else {
+					$("#tipUnfinish").text(data.msg);
+					WAY.box.show({
+						'divid' : 'tipUnfinishWin'
+					});
+					lock = 1;
+				}
+			}
+		});
+	}
+	
+	function clicked(ele, e) {
+		e = e || window.event;
+		var ul = ele.getElementsByTagName("ul")[0];
+	
+		var height = ul.getElementsByTagName("li").length * 23;
+		height = height > 200 ? "200px" : (height + "px");
+		ul.style.height = height;
+	
+		ul.style.display = ul.style.display == "block" ? "none" : "block";
+		stopPropagation(e);
+		return false;
+	}
+	
+	function checkIt(ele, value) {
+		var sw = $("#sw").val();
+		var p = ele.parentNode.parentNode.parentNode.getElementsByTagName("p")[0];
+		p.innerText = ele.innerText;
+	
+		if (sw.replace(/(^\s*)|(\s*$)/, '') == "请输入关键字") {
+			sw = "";
+		}
+		location.href = "/mooc-ans/work/getAllWork?classId=153220001&courseId=266546001&status=" + value + "&sw=" + sw 
+			+ "&isdisplaytable=2&mooc=1&ut=s";
+		return false;
+	}
+	
+	// 根据关键词检索作业
+	function searchWork() {
+		var sw = $("#sw").val();
+		if (sw.replace(/(^\s*)|(\s*$)/, '') == '' || sw.replace(/(^\s*)|(\s*$)/, '') == "请输入关键字") {
+			alert("请输入关键字");
+		} else {
+			var status = $("#status").val();
+			location.href = "/mooc-ans/work/getAllWork?classId=153220001&courseId=266546001&status=" + status + "&sw=" 
+				+ sw + "&isdisplaytable=2&mooc=1&ut=s";
+		}
+	}
+	
+	function stopPropagation(event) {
+		if (event.stopPropagation) {
+			event.stopPropagation();
+		} else {
+			event.cancelBubble = true;
+		}
+	}
+	
+	page.showPage(1, 1, "changePage", "首页", "尾页");
+	function changePage(pageNum) {
+		location.href = "/mooc-ans/work/getAllWork?courseId=266546001&classId=153220001&pageNum=" 
+			+ pageNum + "&isdisplaytable=2&mooc=1&ut=s&enc=1111aaaa2222bbbb3333cccc4444dd01";
+	}
+</script>
+</body>
+</html>
